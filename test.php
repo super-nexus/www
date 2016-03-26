@@ -56,7 +56,5 @@ echo mysqli_error($dbc);
 mysqli_close($dbc);
 
 ?>
-
-?>
 </body>
 </html>
