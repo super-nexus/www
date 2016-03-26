@@ -7,7 +7,7 @@
 <?php
 define("DB_USER", "Andrija");
 define("DB_PASSWORD", "12345");
-define("DB", "test1");
+define("DB_NAME", "test1");
 define("DB_URL", "localhost");
 
 $dbc = mysqli_connect(DB_URL, DB_USER, DB_PASSWORD, DB_NAME)
