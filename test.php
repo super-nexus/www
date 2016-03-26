@@ -13,7 +13,7 @@ define("DB_URL", "localhost");
 $dbc = mysqli_connect(DB_URL, DB_USER, DB_PASSWORD, DB_NAME)
 OR die("Could not connect to mySQL server" . mysqli_connect_error());
 
-$query ="SELECT first_name, last_name, email, street, city, state, zip,	phone, birth_date FROM students";
+$query ="SELECT first_name, last_name, email, address, state FROM students";
 
 $response = mysqli_query($dbc, $query);
 
@@ -25,12 +25,8 @@ cellspacing="5" cellpadding="8">
 <tr><td align="left"><b>First Name</b></td>
 <td align="left"><b>Last Name</b></td>
 <td align="left"><b>Email</b></td>
-<td align="left"><b>Street</b></td>
-<td align="left"><b>City</b></td>
+<td align="left"><b>Address</b></td>
 <td align="left"><b>State</b></td>
-<td align="left"><b>Zip</b></td>
-<td align="left"><b>Phone</b></td>
-<td align="left"><b>Birth Day</b></td></tr>';
 
 // mysqli_fetch_array will return a row of data from the query
 // until no further data is available
