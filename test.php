@@ -36,12 +36,8 @@ echo '<tr><td align="left">' .
 $row['first_name'] . '</td><td align="left">' . 
 $row['last_name'] . '</td><td align="left">' .
 $row['email'] . '</td><td align="left">' . 
-$row['street'] . '</td><td align="left">' .
-$row['city'] . '</td><td align="left">' . 
-$row['state'] . '</td><td align="left">' .
-$row['zip'] . '</td><td align="left">' . 
-$row['phone'] . '</td><td align="left">' .
-$row['birth_date'] . '</td><td align="left">';
+$row['address'] . '</td><td align="left">' . 
+$row['state'] . '</td><td align="left">';
 
 echo '</tr>';
 }
