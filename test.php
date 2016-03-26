@@ -8,7 +8,7 @@
 define("DB_USER", "Andrija");
 define("DB_PASSWORD", "12345");
 define("DB", "test1");
-define("DB_URL", "192.168.1:3306");
+define("DB_URL", "192.168.100.1:3306");
 
 $dbc = mysqli_connect(DB_URL, DB_USER, DB_PASSWORD, DB_NAME)
 OR die("Could not connect to mySQL server" . mysqli_connect_error());
